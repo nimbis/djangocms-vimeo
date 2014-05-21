@@ -7,6 +7,10 @@ from django.db import models
 
 class Migration(SchemaMigration):
 
+    depends_on = (
+        ('cms', '0064_staticplaceholder_site_change'),
+    )
+
     def forwards(self, orm):
         # Adding model 'VimeoVideo'
         db.create_table(u'djangocms_vimeo_vimeovideo', (
