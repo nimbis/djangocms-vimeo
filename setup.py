@@ -23,7 +23,7 @@ reqs = parse_requirements("requirements/common.txt")
 
 setup(
     name='djangocms-vimeo',
-    version='v0.1.0',
+    version='v0.1.1',
     description='Video plugin for django CMS',
     author='Nimbis Services, Inc.',
     author_email='devops@nimbisservices.com',
