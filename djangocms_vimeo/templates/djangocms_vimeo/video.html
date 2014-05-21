@@ -1,0 +1,28 @@
+{% load i18n sekizai_tags cms_js_tags %}
+{% load static from staticfiles %}
+
+{% addtoblock "js" %}
+<script type="text/javascript">
+  document.createElement('video');document.createElement('audio');document.createElement('track');
+</script>
+<script src="{% static "js/video.js" %}"></script>
+<script src="{% static "js/vjs.vimeo.js" %}"></script>
+{% endaddtoblock %}
+
+{% addtoblock "css" %}
+<link rel="stylesheet" href="{% static "css/video-js.min.css" %}">
+{% endaddtoblock %}
+
+<video id="vimeo-{{ object.pk }}" class="video-js vjs-default-skin"
+  controls preload="auto" width="{{ object.get_width }}" height="{{ object.get_height }}"
+  data-setup='{ "techOrder": ["vimeo"]}' src="{{ object.get_movie }}"
+
+  {% if object.loop %}
+  loop
+  {% endif %}
+
+  {% if object.autoplay %}
+  autoplay
+  {% endif %}
+  >
+</video>
