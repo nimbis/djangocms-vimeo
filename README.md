@@ -14,3 +14,10 @@ This plugin requires `django CMS` 3.0 or higher to be properly installed.
 * In your projects `virtualenv`_, run ``pip install djangocms-vimeo``.
 * Add ``'djangocms_vimeo'`` to your ``INSTALLED_APPS`` setting.
 * Run ``manage.py migrate djangocms_vimeo``.
+
+
+History
+-------
+
+* v0.1.4: Added missing static directory to MANIFEST
+* v0.1.0: Inital release
