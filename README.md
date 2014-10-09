@@ -19,6 +19,18 @@ This plugin requires `django CMS` 3.0 or higher to be properly installed.
 History
 -------
 
-* v0.1.5: Made fixes to videojs-vimeo to correctly detect HTTPS.
-* v0.1.4: Added missing static directory to MANIFEST.
-* v0.1.0: Inital release
+v0.2.0:
+
+    * Moved existing migrations directory to south_migrations and added Django 1.7 migrations.
+
+v0.1.5:
+
+    * Made fixes to videojs-vimeo to correctly detect HTTPS.
+
+v0.1.4:
+
+    * Added missing static directory to MANIFEST.
+
+v0.1.0:
+
+    * Inital release
