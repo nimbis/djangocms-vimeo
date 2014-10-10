@@ -1,6 +1,8 @@
 djangocms-vimeo
 ===============
 
+[![Build Status](https://travis-ci.org/nimbis/djangocms-vimeo.svg?branch=master)](https://travis-ci.org/nimbis/djangocms-vimeo)
+
 A [video.js](https://github.com/videojs/video.js) Vimeo video plugin for django CMS.
 Loosely based on the [djangocms-video](https://github.com/divio/djangocms-video) plugin.
 Uses the [videojs-vimeo](https://github.com/eXon/videojs-vimeo) plugin.
