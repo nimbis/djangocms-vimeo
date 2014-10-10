@@ -7,7 +7,7 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('cms', '0004_auto_20141009_1507'),
+        ('cms', '__first__'),
     ]
 
     operations = [

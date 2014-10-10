@@ -18,7 +18,7 @@ check-reqs: check-venv
 reqs: check-venv
 	pip install -r requirements.txt
 
-PEP8_OPTS=--repeat --exclude=static,migrations,js,doc --show-source
+PEP8_OPTS=--repeat --exclude=static,south_migrations,migrations,js,doc --show-source
 
 pep8:
 	pep8 $(PEP8_OPTS) .
@@ -29,14 +29,6 @@ pep8:
 
 test: check-venv clean
 	./manage.py test
-
-#
-# doc
-#
-
-doc: check-reqs
-	cd doc; make html
-	@echo "See ./doc/_build/index.html for html documentation."
 
 #
 # code coverage

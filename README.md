@@ -1,6 +1,8 @@
 djangocms-vimeo
 ===============
 
+[![Build Status](https://travis-ci.org/nimbis/djangocms-vimeo.svg?branch=master)](https://travis-ci.org/nimbis/djangocms-vimeo)
+
 A [video.js](https://github.com/videojs/video.js) Vimeo video plugin for django CMS.
 Loosely based on the [djangocms-video](https://github.com/divio/djangocms-video) plugin.
 Uses the [videojs-vimeo](https://github.com/eXon/videojs-vimeo) plugin.
@@ -19,9 +21,13 @@ This plugin requires `django CMS` 3.0 or higher to be properly installed.
 History
 -------
 
+v0.3.0:
+
+    * Upgraded to Video.js v4.9.0. Fixed the broken Django 1.7 migration that existed in v0.2.0.
+
 v0.2.0:
 
-    * Moved existing migrations directory to south_migrations and added Django 1.7 migrations.
+    * Moved existing migrations directory to south_migrations and added Django 1.7 migrations. This version contained a broken Django 1.7 migration.
 
 v0.1.5:
 
