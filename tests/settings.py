@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'menus',
     'mptt',
+    'treebeard',
     'cms',
     'djangocms_vimeo',
     # Uncomment the next line to enable the admin:

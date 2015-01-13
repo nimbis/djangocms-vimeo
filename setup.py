@@ -3,6 +3,7 @@
 
 from setuptools import setup, find_packages
 from pip.req import parse_requirements
+from uuid import uuid1
 
 CLASSIFIERS = [
     'Development Status :: 5 - Production/Stable',
@@ -19,11 +20,11 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 2.7',
 ]
 
-reqs = parse_requirements("requirements/common.txt")
+reqs = parse_requirements("requirements/common.txt", session=uuid1())
 
 setup(
     name='djangocms-vimeo',
-    version='0.3.0',
+    version='0.3.1',
     description='Video plugin for django CMS',
     author='Nimbis Services, Inc.',
     author_email='devops@nimbisservices.com',
