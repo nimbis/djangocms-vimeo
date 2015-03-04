@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
-from pip.req import parse_requirements
-from uuid import uuid1
 
 CLASSIFIERS = [
     'Development Status :: 5 - Production/Stable',
@@ -20,8 +18,6 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 2.7',
 ]
 
-reqs = parse_requirements("requirements/common.txt", session=uuid1())
-
 setup(
     name='djangocms-vimeo',
     version='0.3.1',
@@ -30,7 +26,10 @@ setup(
     author_email='devops@nimbisservices.com',
     url='https://github.com/nimbis/djangocms-vimeo',
     packages=find_packages(exclude=["tests", ]),
-    install_requires=[str(x).split(' ')[0] for x in reqs],
+    install_requires=[
+        'Django',
+        'django-cms >= 3.0',
+    ],
     license='LICENSE.txt',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
