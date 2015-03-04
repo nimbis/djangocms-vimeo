@@ -21,6 +21,11 @@ This plugin requires `django CMS` 3.0 or higher to be properly installed.
 History
 -------
 
+v0.3.2:
+
+    * Removing pip requirement from setup.py.
+
+
 v0.3.0:
 
     * Upgraded to Video.js v4.9.0. Fixed the broken Django 1.7 migration that existed in v0.2.0.
