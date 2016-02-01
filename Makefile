@@ -42,7 +42,7 @@ test: check-venv clean
 # code coverage
 #
 
-COVERAGE_INCLUDE='cmsplugin_tabs/*'
+COVERAGE_INCLUDE='djangocms_vimeo/*'
 
 coverage: check-reqs
 	coverage erase
