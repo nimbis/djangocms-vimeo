@@ -25,6 +25,11 @@ See the [Contributing Guidelines](CONTRIBUTING.md).
 History
 -------
 
+v0.3.3:
+
+    * Patch the vjs.vimeo.js according to https://github.com/eXon/videojs-vimeo/commit/0543812e2ebe58ed279d695667b4ae9d38029945
+
+
 v0.3.2:
 
     * Removing pip requirement from setup.py.
