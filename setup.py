@@ -20,7 +20,7 @@ CLASSIFIERS = [
 
 setup(
     name='djangocms-vimeo',
-    version='0.3.3',
+    version='0.4.0',
     description='Video plugin for django CMS',
     author='Nimbis Services, Inc.',
     author_email='devops@nimbisservices.com',

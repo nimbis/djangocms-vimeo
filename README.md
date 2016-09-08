@@ -25,6 +25,11 @@ See the [Contributing Guidelines](CONTRIBUTING.md).
 History
 -------
 
+v0.4.0:
+
+    * Adding migration required for Django CMS v3.3.1 and later, which is now
+      required for this app.
+
 v0.3.3:
 
     * Patch the vjs.vimeo.js according to https://github.com/eXon/videojs-vimeo/commit/0543812e2ebe58ed279d695667b4ae9d38029945
