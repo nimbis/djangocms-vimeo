@@ -11,7 +11,7 @@ Uses the [videojs-vimeo](https://github.com/eXon/videojs-vimeo) plugin.
 Installation
 ------------
 
-This plugin requires `django CMS` 3.0 or higher to be properly installed.
+This plugin requires `django CMS` 3.3.1 or higher to be properly installed.
 
 * In your projects `virtualenv`_, run ``pip install djangocms-vimeo``.
 * Add ``'djangocms_vimeo'`` to your ``INSTALLED_APPS`` setting.
